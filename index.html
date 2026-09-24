@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasteur Lion Uploader</title>
+<meta name="description" content="Pasteur Lion Uploader — a personal desktop tool by Hervé Nsimba to post his own original Christian motivation videos (Pasteur Lion) to his TikTok account via the official TikTok Content Posting API.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;color:#1a1a1a;background:#fff;max-width:720px;margin:0 auto;padding:24px 20px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+h1{font-size:1.5rem}
+h2{font-size:1.15rem;margin:24px 0 8px}
+p,li{margin-bottom:12px}
+ol,ul{padding-left:24px}
+.lang-toggle{border:1px solid #ccc;background:#fff;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.9rem}
+.lang-toggle:hover{background:#f5f5f5}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid #e5e5e5;font-size:.85rem;color:#555}
+footer a{color:#555;margin-right:16px}
+.scopes{background:#f7f7f7;border:1px solid #e5e5e5;border-radius:8px;padding:12px 16px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+[data-lang="en"] .fr{display:none}
+[data-lang="fr"] .en{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Pasteur Lion Uploader</h1>
+  <button class="lang-toggle" onclick="document.documentElement.setAttribute('data-lang', document.documentElement.getAttribute('data-lang')==='en'?'fr':'en');document.documentElement.setAttribute('lang', document.documentElement.getAttribute('data-lang'));"><span class="en">FR</span><span class="fr">EN</span></button>
+</header>
+
+<main>
+  <div class="en">
+    <h2>What this app does</h2>
+    <p>Pasteur Lion Uploader is a <strong>personal desktop tool</strong> built by Hervé Nsimba ("Bizz"). It lets him send his own original Christian motivation videos in French ("Pasteur Lion") from his computer directly to <strong>his own TikTok account (@herve.lut)</strong> using the official TikTok Content Posting API (Direct Post).</p>
+    <h2>How it works</h2>
+    <ol>
+      <li><strong>Connect</strong> his TikTok account through the official TikTok OAuth login.</li>
+      <li><strong>Choose</strong> one of his original video files on his computer.</li>
+      <li><strong>Publish</strong> it to his account with Direct Post.</li>
+    </ol>
+    <h2>Permissions requested (scopes)</h2>
+    <div class="scopes">user.info.basic<br>video.upload<br>video.publish</div>
+    <p>OAuth tokens are stored locally on the user's computer only. No data is collected, shared, or sold.</p>
+    <p>Contact: via TikTok @herve.lut</p>
+  </div>
+  <div class="fr">
+    <h2>Ce que fait cette application</h2>
+    <p>Pasteur Lion Uploader est un <strong>outil de bureau personnel</strong> développé par Hervé Nsimba (« Bizz »). Il lui permet d'envoyer ses propres vidéos originales de motivation chrétienne en français (« Pasteur Lion ») depuis son ordinateur directement vers <strong>son propre compte TikTok (@herve.lut)</strong> grâce à l'API officielle TikTok Content Posting API (Direct Post).</p>
+    <h2>Comment ça fonctionne</h2>
+    <ol>
+      <li><strong>Connecter</strong> son compte TikTok via la connexion OAuth officielle de TikTok.</li>
+      <li><strong>Choisir</strong> l'un de ses fichiers vidéo originaux sur son ordinateur.</li>
+      <li><strong>Publier</strong> la vidéo sur son compte avec Direct Post.</li>
+    </ol>
+    <h2>Autorisations demandées (scopes)</h2>
+    <div class="scopes">user.info.basic<br>video.upload<br>video.publish</div>
+    <p>Les jetons OAuth sont stockés uniquement en local sur l'ordinateur de l'utilisateur. Aucune donnée n'est collectée, partagée ou revendue.</p>
+    <p>Contact : via TikTok @herve.lut</p>
+  </div>
+</main>
+
+<footer>
+  <a href="terms/">Terms of Use / Conditions d'utilisation</a>
+  <a href="privacy/">Privacy Policy / Politique de confidentialité</a>
+</footer>
+</body>
+</html>
